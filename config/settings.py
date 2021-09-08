@@ -1,3 +1,6 @@
+from django.contrib.messages import constants as messages
+from django.core.mail import message
+
 """
 Django settings for config project.
 
@@ -120,4 +123,16 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+
+
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'alert alert-danger',
+    messages.WARNING: 'alert alert-warning',
+    messages.SUCCESS: 'alert alert-success',
+    messages.INFO: 'alert alert-info',
+    
+
+}
