@@ -19,7 +19,7 @@ class InquiryForm(forms.Form):
 
         subject = 'お問い合わせ {}'.format(title)
         message = '送信者名: {0}\nメールアドレス: {1}\nメッセージ: {2}\n'.format(name, email, message)
-        flom_email = 'admin@example.com'
+        from_email = 'admin@example.com'
         to_list = [
             'test@example.com'
         ]
