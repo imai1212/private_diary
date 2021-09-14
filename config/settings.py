@@ -179,5 +179,9 @@ MEDIA_URL = '/media/'
 
 
 
+LOGIN_REDIRECT_URL = 'diary:diary_list'
+
+
+
 #private_diary/settings_dev.py
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
